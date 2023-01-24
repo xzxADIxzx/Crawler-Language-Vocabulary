@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+
+    background-color: #22272e;
+}
+
+header {
+    height: 32px;
+
+    padding: 16px;
+    padding-left: 96px;
+
+    background-color: #6d56bf;
+}
+
+header::after {
+    width: 96px;
+    height: 96px;
+
+    position: absolute;
+    top: 0;
+    left: -20px;
+
+    /* just to make it visible */
+    content: "";
+    box-shadow: -4px 0px 10px #22272e;
+
+    background-color: #bf92f9;
+    transform: skewX(40deg);
+}
+
+nav {
+    transform: translateY(-2px);
+}
+
+nav>a {
+    padding: 8px;
+
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #22272e;
+
+    color: white;
+    transition: .25s text-shadow;
+}
+
+nav>a:hover {
+    text-shadow: 0px 0px 10px white;
+}
