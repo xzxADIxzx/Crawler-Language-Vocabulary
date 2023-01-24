@@ -66,5 +66,22 @@ nav>i {
 
     padding: 32px 256px;
 
+    font-family: "Noto Sans";
+    font-size: 16px;
+    line-height: 1.5;
+
+    color: #adbac7;
     overflow-y: auto;
+}
+
+#content::-webkit-scrollbar {
+    width: 16px;
+}
+
+#content::-webkit-scrollbar-thumb {
+    background-color: #6d56bf;
+}
+
+#content::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 0px 0px 8px #bf92f9;
 }

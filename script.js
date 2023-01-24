@@ -6,3 +6,5 @@ async function load(page) {
         .then((response) => response.text())
         .then((html) => document.getElementById("content").innerHTML = html)
 }
+
+load("about")
