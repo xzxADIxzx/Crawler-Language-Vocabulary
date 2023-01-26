@@ -89,6 +89,34 @@ nav>i {
 /* #region vocabulary */
 
 #word-search {
+    width: calc(100% - 34px);
+
+    padding: 4px 16px;
+    margin-bottom: 32px;
+
+    font-family: "Noto Sans";
+    font-size: 16px;
+
+    border: 1px solid;
+    border-color: #444c56;
+    border-radius: 14px;
+
+    color: white;
+    background-color: #22272e;
+
+    outline: none;
+    transition: .25s border-color;
+}
+
+#word-search:hover {
+    border-color: #6d56bf;
+}
+
+#word-search:focus {
+    border-color: #bf92f9;
+}
+
+#word-list {
     display: grid;
     grid-template-columns: 50% 50%;
 }

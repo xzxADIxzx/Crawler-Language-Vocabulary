@@ -28,6 +28,19 @@ function buildVocabulary() {
     vocabulary.forEach(word => {
         list.innerHTML += template.replace("#word", word.word).replace("#translation", word.noun)
     });
+
+    var search = document.getElementById("word-search")
+    var compare = (item, id, value) => item.childNodes[1].childNodes[id].innerText.toLowerCase().search(value)
+
+    search.addEventListener("input", () => {
+        var value = search.value.toLowerCase().trim()
+        var items = document.getElementsByClassName("word")
+
+        if (value == "")
+            for (let item of items) item.style.display = "block"
+        else
+            for (let item of items) item.style.display = compare(item, 1, value) == -1 && compare(item, 3, value) == -1 ? "none" : "block"
+    })
 }
 
 // #endregion
