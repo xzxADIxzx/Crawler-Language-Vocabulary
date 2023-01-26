@@ -62,9 +62,9 @@ nav>i {
 }
 
 #content {
-    height: calc(100vh - 128px);
+    height: calc(100vh - 96px);
 
-    padding: 32px 256px;
+    padding: 32px 256px 0px 256px;
 
     font-family: "Noto Sans";
     font-size: 16px;
@@ -119,10 +119,6 @@ nav>i {
 #word-list {
     display: grid;
     grid-template-columns: 50% 50%;
-}
-
-#word-list>div:nth-child(2n - 1) {
-    margin-right: 32px;
 }
 
 .word {
