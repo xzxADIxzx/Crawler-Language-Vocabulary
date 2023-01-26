@@ -85,3 +85,40 @@ nav>i {
 #content::-webkit-scrollbar-thumb:hover {
     box-shadow: inset 0px 0px 8px #bf92f9;
 }
+
+/* #region vocabulary */
+
+#word-search {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#word-list>div:nth-child(2n - 1) {
+    margin-right: 32px;
+}
+
+.word {
+    margin-bottom: 32px;
+
+    border: 1px solid;
+    border-color: #444c56;
+    border-radius: 8px;
+}
+
+.word-original,
+.word-translation {
+    padding: 8px;
+
+    flex-grow: 1;
+    background-color: #444c56;
+}
+
+.word-original {
+    border-top-left-radius: 6px;
+}
+
+.word-translation {
+    border-top-right-radius: 6px;
+}
+
+/* #endregion */

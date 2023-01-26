@@ -1,0 +1,20 @@
+[
+    {
+        "word": "oko",
+        "noun": "vision",
+        "verb": "to see",
+        "perfect-verb": "saw",
+        "adj": "sighted",
+        "adj#verb": "who sees",
+        "adj#perfect-verb": "who saw"
+    },
+    {
+        "word": "hier",
+        "noun": "hearing",
+        "verb": "to hear",
+        "perfect-verb": "heard",
+        "adj": "not deaf",
+        "adj#verb": "who hears",
+        "adj#perfect-verb": "who heard"
+    }
+]
