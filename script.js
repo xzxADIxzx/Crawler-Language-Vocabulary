@@ -4,7 +4,7 @@ var content = document.getElementById("content");
 // #region language
 
 var vocabulary;
-fetch(root + "/language/vocabulary.json").then(response => vocabulary = response.json())
+fetch(root + "/language/vocabulary.json").then(response => response.json()).then(json => vocabulary = json)
 
 // #endregion
 // #region build
