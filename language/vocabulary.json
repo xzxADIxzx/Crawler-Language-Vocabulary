@@ -1,12 +1,12 @@
 [
     {
-        "word": "oko",
-        "noun": "vision",
-        "verb": "to see",
-        "perfect-verb": "saw",
-        "adj": "sighted",
-        "adj#verb": "who sees",
-        "adj#perfect-verb": "who saw"
+        "word": "aytem",
+        "noun": "object, item",
+        "verb": "to objectify",
+        "perfect-verb": "objectified",
+        "adj": "objective",
+        "adj#verb": "who objectifying",
+        "adj#perfect-verb": "who objectified"
     },
     {
         "word": "hier",
@@ -16,5 +16,32 @@
         "adj": "not deaf",
         "adj#verb": "who hears",
         "adj#perfect-verb": "who heard"
+    },
+    {
+        "word": "maoma",
+        "noun": "water",
+        "verb": "to wet",
+        "perfect-verb": "to wet",
+        "adj": "wet",
+        "adj#verb": "who getting wet",
+        "adj#perfect-verb": "wetted"
+    },
+    {
+        "word": "newer",
+        "noun": "knowledge",
+        "verb": "to know",
+        "perfect-verb": "to know",
+        "adj": "knowing",
+        "adj#verb": "who knows",
+        "adj#perfect-verb": "who knows"
+    },
+    {
+        "word": "oko",
+        "noun": "vision",
+        "verb": "to see",
+        "perfect-verb": "saw",
+        "adj": "sighted",
+        "adj#verb": "who sees",
+        "adj#perfect-verb": "who saw"
     }
 ]
