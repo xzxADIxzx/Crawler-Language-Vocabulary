@@ -8,28 +8,36 @@ class Word {
     constructor(data) {
         this.data = data;
         this.building = null;
-
-        this.get = (i) => this.building.children[1].children[i].checked
-        this.set = (i, value) => this.building.children[1].children[i].checked = value
     }
 
-    build() {
-        for (let child of this.building.children[1].children) child.onclick = () => this.rebuild()
-        this.rebuild()
-    }
+    build(building) {
+        this.building = building;
 
-    rebuild() {
-        var original = this.building.children[0].children[0]
-        var translation = this.building.children[0].children[1]
+        var original = building.children[0].children[0]
+        var translation = building.children[0].children[1]
+        var get = i => building.children[1].children[i * 2 + 1]
 
-        var verb = this.get(1)
-        var perfectVerb = this.get(3)
-        var adjective = this.get(5)
+        var verb = get(0)
+        var perfect = get(1)
+        var adjective = get(2)
 
-        original.innerHTML = (adjective ? "la" : "") + this.data.word + (verb ? "`i" : perfectVerb ? "`in" : "")
-        translation.innerHTML = this.data[
-                verb ? (adjective ? "adj#verb" : "verb") :
-                perfectVerb ? (adjective ? "adj#perfect-verb" : "perfect-verb") : "noun"]
+        var rebuild = () => {
+            var options = []
+
+            if (adjective.checked) options.push("adj")
+            if (verb.checked) options.push(perfect.checked ? "perfect-verb" : "verb")
+
+            original.innerHTML = (adjective.checked ? "la" : "") + this.data.word + (verb.checked ? (perfect.checked ? "`in" : "`i") : "")
+            translation.innerHTML = this.data[options.length == 0 ? "noun" : options.join("#")]
+        }
+        rebuild()
+
+        verb.onclick = () => {
+            perfect.disabled = !verb.checked
+            rebuild()
+        }
+        perfect.onclick = rebuild
+        adjective.onclick = rebuild
     }
 }
 
@@ -54,8 +62,7 @@ function buildVocabulary() {
     var list = document.getElementById("word-list")
     list.innerHTML = list.innerHTML.repeat(vocabulary.length)
 
-    for (let i = 0; i < vocabulary.length; i++) vocabulary[i].building = list.children[i]
-    vocabulary.forEach(word => word.build())
+    for (let i = 0; i < vocabulary.length; i++) vocabulary[i].build(list.children[i])
 
     var search = document.getElementById("word-search")
     var compare = (item, id, value) => item.childNodes[1].childNodes[id].innerText.toLowerCase().search(value)
