@@ -3,8 +3,37 @@ var content = document.getElementById("content");
 
 // #region language
 
-var vocabulary;
-fetch(root + "/language/vocabulary.json").then(response => response.json()).then(json => vocabulary = json)
+class Word {
+
+    constructor(data) {
+        this.data = data;
+        this.building = null;
+
+        this.get = (i) => this.building.children[1].children[i].checked
+        this.set = (i, value) => this.building.children[1].children[i].checked = value
+    }
+
+    build() {
+        for (let child of this.building.children[1].children) child.onclick = () => this.rebuild()
+        this.rebuild()
+    }
+
+    rebuild() {
+        var original = this.building.children[0].children[0]
+        var translation = this.building.children[0].children[1]
+
+        var verb = this.get(1)
+        var perfectVerb = this.get(3)
+        var adjective = this.get(5)
+
+        original.innerHTML = (adjective ? "la" : "") + this.data.word + (verb ? "`i" : perfectVerb ? "`in" : "")
+        translation.innerHTML = this.data[
+                verb ? (adjective ? "adj#verb" : "verb") :
+                perfectVerb ? (adjective ? "adj#perfect-verb" : "perfect-verb") : "noun"]
+    }
+}
+
+fetch(root + "/language/vocabulary.json").then(response => response.json()).then(json => this.vocabulary = json.map(data => new Word(data)))
 
 // #endregion
 // #region build
@@ -12,22 +41,21 @@ fetch(root + "/language/vocabulary.json").then(response => response.json()).then
 var navs = document.querySelectorAll("nav > a")
 navs.forEach(nav => nav.addEventListener("click", () => load(nav.href.split('#')[1])))
 
-async function load(page) {
-    await fetch(root + "/pages/" + page + ".html")
+function load(page) {
+    fetch(root + "/pages/" + page + ".html")
         .then(response => response.text())
         .then(html => content.innerHTML = html)
-
-    if (page == "vocabulary") buildVocabulary();
+        .finally(() => {
+            if (page == "vocabulary") buildVocabulary();
+        })
 }
 
 function buildVocabulary() {
     var list = document.getElementById("word-list")
-    var template = list.innerHTML
+    list.innerHTML = list.innerHTML.repeat(vocabulary.length)
 
-    list.innerHTML = ""
-    vocabulary.forEach(word => {
-        list.innerHTML += template.replace("#word", word.word).replace("#translation", word.noun)
-    });
+    for (let i = 0; i < vocabulary.length; i++) vocabulary[i].building = list.children[i]
+    vocabulary.forEach(word => word.build())
 
     var search = document.getElementById("word-search")
     var compare = (item, id, value) => item.childNodes[1].childNodes[id].innerText.toLowerCase().search(value)
