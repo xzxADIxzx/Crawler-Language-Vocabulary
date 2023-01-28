@@ -15,11 +15,13 @@ class Word {
 
         var original = building.children[0].children[0]
         var translation = building.children[0].children[1]
-        var get = i => building.children[1].children[i * 2 + 1]
+        var get = i => building.children[1].children[i]
 
         var verb = get(0)
         var perfect = get(1)
-        var adjective = get(2)
+        var participle = get(2)
+        var adjective = get(3)
+        var forced = get(4)
 
         var rebuild = () => {
             var options = []
@@ -33,11 +35,17 @@ class Word {
         rebuild()
 
         verb.onclick = () => {
-            perfect.disabled = !verb.checked
+            perfect.disabled = participle.disabled = !verb.checked
             rebuild()
         }
         perfect.onclick = rebuild
-        adjective.onclick = rebuild
+        participle.onclick = rebuild
+
+        adjective.onclick = () => {
+            forced.disabled = !verb.checked
+            rebuild()
+        }
+        forced.onclick = rebuild
     }
 }
 
@@ -87,4 +95,4 @@ function buildVocabulary() {
 
 // #endregion
 
-load("about")
+// load("about")

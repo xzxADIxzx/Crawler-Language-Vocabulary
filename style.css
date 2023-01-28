@@ -145,6 +145,15 @@ nav>i {
     border-top-right-radius: 6px;
 }
 
+.word>div:nth-child(2) {
+    width: 80%;
+    padding: 8px;
+
+    display: grid;
+    grid-template-columns: 20px auto 20px auto 20px auto;
+    align-items: center;
+}
+
 input[type="checkbox"] {
     width: 14px;
     height: 14px;
