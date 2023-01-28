@@ -83,14 +83,7 @@ function buildVocabulary() {
             for (let item of items) item.style.display = "block"
         else
             for (let item of items) item.style.display = compare(item, 1, value) == -1 && compare(item, 3, value) == -1 ? "none" : "block"
-
-        let i = 0;
-        for (let item of items) {
-            if (item.style.display == "none") continue;
-            item.style.marginRight = i++ % 2 == 0 ? "32px" : "0px"
-        }
     })
-    search.dispatchEvent(new Event("input"))
 }
 
 // #endregion
