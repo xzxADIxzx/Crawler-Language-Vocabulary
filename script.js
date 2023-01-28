@@ -1,17 +1,17 @@
-var root = "https://raw.githubusercontent.com/xzxADIxzx/Crawler-Language-Vocabulary/main";
-var content = document.getElementById("content");
+var root = "https://raw.githubusercontent.com/xzxADIxzx/Crawler-Language-Vocabulary/main"
+var content = document.getElementById("content")
 
 // #region language
 
 class Word {
 
     constructor(data) {
-        this.data = data;
-        this.building = null;
+        this.data = data
+        this.building = null
     }
 
     build(building) {
-        this.building = building;
+        this.building = building
 
         var original = building.children[0].children[0]
         var translation = building.children[0].children[1]
@@ -35,14 +35,21 @@ class Word {
         rebuild()
 
         verb.onclick = () => {
-            perfect.disabled = participle.disabled = !verb.checked
+            perfect.disabled = !verb.checked || participle.checked
+            participle.disabled = !verb.checked || perfect.checked
             rebuild()
         }
-        perfect.onclick = rebuild
-        participle.onclick = rebuild
-
+        perfect.onclick = () => {
+            participle.disabled = perfect.checked
+            rebuild()
+        }
+        participle.onclick = () => {
+            perfect.disabled = adjective.disabled = participle.checked
+            forced.disabled = participle.checked || !adjective.checked
+            rebuild()
+        }
         adjective.onclick = () => {
-            forced.disabled = !verb.checked
+            forced.disabled = !adjective.checked
             rebuild()
         }
         forced.onclick = rebuild
@@ -62,7 +69,7 @@ function load(page) {
         .then(response => response.text())
         .then(html => content.innerHTML = html)
         .finally(() => {
-            if (page == "vocabulary") buildVocabulary();
+            if (page == "vocabulary") buildVocabulary()
         })
 }
 
@@ -88,4 +95,4 @@ function buildVocabulary() {
 
 // #endregion
 
-// load("about")
+load("about")
