@@ -1,5 +1,21 @@
 [
     {
+        "word": "mawo",
+        "mawo": "wetness, humidity",
+        "mawo`i": "to soak",
+        "mawo`in": "to finish soaking",
+        "lamawo": "wet",
+        "lamawo`i": "one who gets wet",
+        "lamawo`in": "one who got wet",
+        "thamawo": "wet",
+        "thamawo`i": "one who gets wet because of someone",
+        "thamawo`in": "one who got wet because of someone",
+        "namawo`i": "one who soaks someone",
+        "namawo`in": "one who finishes soaking someone"
+    }
+]
+/*[
+    {
         "word": "aytem",
         "noun": "object, item",
         "verb": "to objectify",
@@ -44,4 +60,4 @@
         "adj#verb": "who sees",
         "adj#perfect-verb": "who saw"
     }
-]
+]*/

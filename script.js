@@ -24,27 +24,27 @@ class Word {
         var forced = get(4)
 
         var rebuild = () => {
-            var options = []
+            var builder = []
 
-            if (adjective.checked) options.push("adj")
-            if (verb.checked) options.push(perfect.checked ? "perfect-verb" : "verb")
+            if (participle.checked && !participle.disabled) builder.push("na")
+            if (adjective.checked && !adjective.disabled) builder.push(forced.checked ? "tha" : "la")
+            builder.push(this.data.word)
+            if (verb.checked && !verb.disabled) builder.push(perfect.checked ? "`in" : "`i")
 
-            original.innerHTML = (adjective.checked ? "la" : "") + this.data.word + (verb.checked ? (perfect.checked ? "`in" : "`i") : "")
-            translation.innerHTML = this.data[options.length == 0 ? "noun" : options.join("#")]
+            var word = builder.join("")
+
+            original.innerHTML = word
+            translation.innerHTML = this.data[word]
         }
         rebuild()
 
         verb.onclick = () => {
-            perfect.disabled = !verb.checked || participle.checked
-            participle.disabled = !verb.checked || perfect.checked
+            perfect.disabled = participle.disabled = !verb.checked
             rebuild()
         }
-        perfect.onclick = () => {
-            participle.disabled = perfect.checked
-            rebuild()
-        }
+        perfect.onclick = rebuild
         participle.onclick = () => {
-            perfect.disabled = adjective.disabled = participle.checked
+            adjective.disabled = participle.checked
             forced.disabled = participle.checked || !adjective.checked
             rebuild()
         }
