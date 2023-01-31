@@ -1,5 +1,38 @@
 [
     {
+        "word": "aytem",
+        "aytem": "object, item",
+        "aytem`i": "to objectify",
+        "aytem`in": "to finish objectifying",
+        "laaytem": "objective",
+        "laaytem`i": "one who objectifies",
+        "laaytem`in": "one who objectified",
+        "thaaytem": "objective",
+        "thaaytem`i": "one who is forced to objectify",
+        "thaaytem`in": "one who was forced to objectify",
+        "naaytem`i": "one who makes someone objectify",
+        "naaytem`in": "one who made someone objectify"
+    },
+    {
+        "word": "hier",
+        "hier": "hearing",
+        "hier`i": "to hear, to listen",
+        "hier`in": "to finish listening",
+        "lahier": "hearing, not deaf",
+        "lahier`i": "one who hears",
+        "lahier`in": "one who heard",
+        "thahier": "hearing, not deaf",
+        "thahier`i": "one who is forced to hear",
+        "thahier`in": "one who was forced to hear",
+        "nahier`i": "one who makes someone hear",
+        "nahier`in": "one who made someone hear"
+    },
+    {
+        "word": "maoma",
+        "maoma": "water",
+        "lamaoma": "aquatic"
+    },
+    {
         "word": "mawo",
         "mawo": "wetness, humidity",
         "mawo`i": "to soak",
@@ -11,53 +44,20 @@
         "thamawo`i": "one who gets wet because of someone",
         "thamawo`in": "one who got wet because of someone",
         "namawo`i": "one who soaks someone",
-        "namawo`in": "one who finishes soaking someone"
-    }
-]
-/*[
-    {
-        "word": "aytem",
-        "noun": "object, item",
-        "verb": "to objectify",
-        "perfect-verb": "objectified",
-        "adj": "objective",
-        "adj#verb": "who objectifying",
-        "adj#perfect-verb": "who objectified"
-    },
-    {
-        "word": "hier",
-        "noun": "hearing",
-        "verb": "to hear",
-        "perfect-verb": "heard",
-        "adj": "not deaf",
-        "adj#verb": "who hears",
-        "adj#perfect-verb": "who heard"
-    },
-    {
-        "word": "maoma",
-        "noun": "water",
-        "verb": "to wet",
-        "perfect-verb": "to wet",
-        "adj": "wet",
-        "adj#verb": "who getting wet",
-        "adj#perfect-verb": "wetted"
-    },
-    {
-        "word": "newer",
-        "noun": "knowledge",
-        "verb": "to know",
-        "perfect-verb": "to know",
-        "adj": "knowing",
-        "adj#verb": "who knows",
-        "adj#perfect-verb": "who knows"
+        "namawo`in": "one who soaked someone"
     },
     {
         "word": "oko",
-        "noun": "vision",
-        "verb": "to see",
-        "perfect-verb": "saw",
-        "adj": "sighted",
-        "adj#verb": "who sees",
-        "adj#perfect-verb": "who saw"
+        "oko": "vision",
+        "oko`i": "to see",
+        "oko`in": "to finish seeing",
+        "laoko": "sighted",
+        "laoko`i": "one who sees",
+        "laoko`in": "one who saw",
+        "thaoko": "sighted",
+        "thaoko`i": "one who is forced to see",
+        "thaoko`in": "one who was forced to see",
+        "naoko`i": "one who makes someone see",
+        "naoko`in": "one who made someone see"
     }
-]*/
+]
