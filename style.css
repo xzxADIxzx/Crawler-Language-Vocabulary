@@ -86,6 +86,34 @@ nav>i {
     box-shadow: inset 0px 0px 8px #bf92f9;
 }
 
+/* #region about & learn */
+
+h1 {
+    padding-bottom: 9px;
+    margin-bottom: 16px;
+
+    border-bottom: 1px solid;
+    border-color: #383f47;
+}
+
+h2 {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+#content a {
+    text-decoration: none;
+    text-shadow: 0px 0px 0px #22272e;
+
+    color: #bf92f9;
+    transition: .25s text-shadow;
+}
+
+#content a:hover {
+    text-shadow: 0px 0px 1px #bf92f9;
+}
+
+/* #endregion */
 /* #region vocabulary */
 
 #word-search {
