@@ -14,6 +14,20 @@
         "naaytem`in": "one who made someone objectify"
     },
     {
+        "word": "coma",
+        "coma": "dream",
+        "coma`i": "to see dreams",
+        "coma`in": "to finish dreaming",
+        "lacoma": "dreamer (one who dreams or literally sees dreams)",
+        "lacoma`i": "one who sees dreams",
+        "lacoma`in": "one who saw dreams",
+        "thacoma": "dreamer (one who dreams or literally sees dreams)",
+        "thacoma`i": "one who is forced to dream",
+        "thacoma`in": "one who was forced to dream",
+        "nacoma`i": "one who makes someone dream",
+        "nacoma`in": "one who made someone dream"
+    },
+    {
         "word": "hier",
         "hier": "hearing",
         "hier`i": "to hear, to listen",
@@ -26,6 +40,20 @@
         "thahier`in": "one who was forced to hear",
         "nahier`i": "one who makes someone hear",
         "nahier`in": "one who made someone hear"
+    },
+    {
+        "word": "linc",
+        "linc": "learning, studying",
+        "linc`i": "to learn",
+        "linc`in": "to finish learning",
+        "lalinc": "learner, student",
+        "lalinc`i": "one who learns",
+        "lalinc`in": "one who has learned",
+        "thalinc": "learner, student",
+        "thalinc`i": "one who is forced to learn",
+        "thalinc`in": "one who was forced to learn",
+        "nalinc`i": "one who makes someone learn",
+        "nalinc`in": "one who made someone learn"
     },
     {
         "word": "maoma",
@@ -47,6 +75,34 @@
         "namawo`in": "one who soaked someone"
     },
     {
+        "word": "new",
+        "new": "understanding",
+        "new`i": "to understand",
+        "new`in": "to finish understanding",
+        "lanew": "understanding, understandable",
+        "lanew`i": "one who understands",
+        "lanew`in": "one who understood",
+        "thanew": "understanding, understandable",
+        "thanew`i": "one who is forced to understand",
+        "thanew`in": "one who was forced to understand",
+        "nanew`i": "one who makes someone understand",
+        "nanew`in": "one who made someone understand"
+    },
+    {
+        "word": "newer",
+        "newer": "knowledge",
+        "newer`i": "to know",
+        "newer`in": "to finish know",
+        "lanewer": "knowledgeable",
+        "lanewer`i": "one who knows",
+        "lanewer`in": "one who has knew",
+        "thanewer": "knowledgeable",
+        "thanewer`i": "one who is forced to know",
+        "thanewer`in": "one who was forced to know",
+        "nanewer`i": "one who makes someone know",
+        "nanewer`in": "one who made someone know"
+    },
+    {
         "word": "oko",
         "oko": "vision",
         "oko`i": "to see",
@@ -59,5 +115,19 @@
         "thaoko`in": "one who was forced to see",
         "naoko`i": "one who makes someone see",
         "naoko`in": "one who made someone see"
+    },
+    {
+        "word": "soma",
+        "soma": "sleeping",
+        "soma`i": "to sleep",
+        "soma`in": "to finish sleeping, wake up",
+        "lasoma": "sleeping",
+        "lasoma`i": "one who sleeps (now)",
+        "lasoma`in": "one who slept",
+        "thasoma": "sleeping",
+        "thasoma`i": "one who is forced to sleep",
+        "thasoma`in": "one who was forced to sleep",
+        "nasoma`i": "one who makes someone sleep",
+        "nasoma`in": "one who made someone sleep"
     }
 ]
