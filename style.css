@@ -74,6 +74,10 @@ nav>i {
     overflow-y: auto;
 }
 
+#content>*:first-child {
+    margin-top: 0px !important;
+}
+
 #content::-webkit-scrollbar {
     width: 16px;
 }
@@ -90,6 +94,7 @@ nav>i {
 
 h1 {
     padding-bottom: 9px;
+    margin-top: 32px;
     margin-bottom: 16px;
 
     border-bottom: 1px solid;
@@ -97,8 +102,20 @@ h1 {
 }
 
 h2 {
-    margin-top: 24px;
-    margin-bottom: 16px;
+    margin-top: 26px;
+    margin-bottom: 14px;
+}
+
+.notation {
+    width: 512px;
+    float: right;
+
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.2em;
+
+    border-left: 1px solid;
+    border-color: #383f47;
 }
 
 #content a {
