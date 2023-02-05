@@ -192,6 +192,10 @@ h2 {
     border-top-right-radius: 6px;
 }
 
+.word>div:nth-child(1) {
+    display: flex;
+}
+
 .word>div:nth-child(2) {
     width: 80%;
     padding: 8px;
