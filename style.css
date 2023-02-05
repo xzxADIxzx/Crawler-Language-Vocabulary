@@ -106,18 +106,6 @@ h2 {
     margin-bottom: 14px;
 }
 
-.notation {
-    width: 512px;
-    float: right;
-
-    font-size: 36px;
-    text-align: center;
-    line-height: 1.2em;
-
-    border-left: 1px solid;
-    border-color: #383f47;
-}
-
 #content a {
     text-decoration: none;
     text-shadow: 0px 0px 0px #22272e;
@@ -128,6 +116,42 @@ h2 {
 
 #content a:hover {
     text-shadow: 0px 0px 1px #bf92f9;
+}
+
+/* #endregion */
+/* #region learn */
+
+.notation {
+    width: 512px;
+    float: right;
+
+    font-size: 34px;
+    text-align: center;
+    line-height: 1.2em;
+
+    border-left: 1px solid;
+    border-color: #383f47;
+}
+
+.box {
+    width: calc(100% - 512px - 32px);
+    margin-bottom: 32px;
+
+    border: 1px solid;
+    border-color: #444c56;
+    border-radius: 8px;
+}
+
+.box>div {
+    padding: 8px;
+}
+
+.box>div:nth-child(1) {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
+    display: flex;
+    background-color: #444c56;
 }
 
 /* #endregion */
