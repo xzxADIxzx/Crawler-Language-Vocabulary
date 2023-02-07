@@ -129,5 +129,33 @@
         "thasoma`in": "one who was forced to sleep",
         "nasoma`i": "one who makes someone sleep",
         "nasoma`in": "one who made someone sleep"
+    },
+    {
+        "word": "souwl",
+        "souwl": "slowness",
+        "souwl`i": "to slow down",
+        "souwl`in": "to finish slow down",
+        "lasouwl": "slow",
+        "lasouwl`i": "one who slows down",
+        "lasouwl`in": "one who slowed down",
+        "thasouwl": "slow",
+        "thasouwl`i": "one who is forced to slow down",
+        "thasouwl`in": "one who was forced to slow down",
+        "nasouwl`i": "one who makes someone slow down",
+        "nasouwl`in": "one who made someone slow down"
+    },
+    {
+        "word": "wuic",
+        "wuic": "acceleration, rapidity",
+        "wuic`i": "to accelerate",
+        "wuic`in": "to finish accelerating",
+        "lawuic": "accelerating, fast, quick",
+        "lawuic`i": "one who accelerates",
+        "lawuic`in": "one who accelerated",
+        "thawuic": "accelerating, fast, quick",
+        "thawuic`i": "one who is forced to accelerate",
+        "thawuic`in": "one who was forced to accelerate",
+        "nawuic`i": "one who makes someone accelerate",
+        "nawuic`in": "one who made someone accelerate"
     }
 ]
