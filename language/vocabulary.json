@@ -103,6 +103,11 @@
         "nanewer`in": "one who made someone know"
     },
     {
+        "word": "neybl",
+        "wayt": "night, nighttime",
+        "lawayt": "nightly"
+    },
+    {
         "word": "oko",
         "oko": "vision",
         "oko`i": "to see",
@@ -143,6 +148,11 @@
         "thasouwl`in": "one who was forced to slow down",
         "nasouwl`i": "one who makes someone slow down",
         "nasouwl`in": "one who made someone slow down"
+    },
+    {
+        "word": "wayt",
+        "wayt": "day, daytime",
+        "lawayt": "diurnal"
     },
     {
         "word": "wuic",
