@@ -28,6 +28,11 @@
         "nacoma`in": "one who made someone dream"
     },
     {
+        "word": "gud",
+        "gud": "goodness",
+        "lagud": "good, well"
+    },
+    {
         "word": "hier",
         "hier": "hearing",
         "hier`i": "to hear, to listen",
@@ -106,6 +111,25 @@
         "word": "neybl",
         "wayt": "night, nighttime",
         "lawayt": "nightly"
+    },
+    {
+        "word": "noami",
+        "noami": "name",
+        "noami`i": "to name",
+        "noami`in": "to finish naming",
+        "lanoami": "named",
+        "lanoami`i": "one who names",
+        "lanoami`in": "one who has named",
+        "thanoami": "named",
+        "thanoami`i": "one who is forced to name",
+        "thanoami`in": "one who was forced to name",
+        "nanoami`i": "one who makes someone name",
+        "nanoami`in": "one who made someone name"
+    },
+    {
+        "word": "oci",
+        "oci": "okay, fine",
+        "laoci": "fine"
     },
     {
         "word": "oco",
