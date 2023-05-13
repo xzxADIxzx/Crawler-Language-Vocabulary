@@ -239,17 +239,22 @@ input[type="checkbox"] {
     border-color: #444c56;
     border-radius: 4px;
 
+    background: linear-gradient(135deg, #bf92f9 50%, #0000 50%);
+    background-size: 28px 28px;
+    background-position: -14px -14px;
+
     appearance: none;
-    transition: .25s border-color, .25s background-color;
+    transition: .25s border-color, .25s background-color, .25s background-position;
 }
 
 input[type="checkbox"]:hover:not([disabled]) {
     border-color: #6d56bf;
+    background-position: -11px -11px;
 }
 
 input[type="checkbox"]:checked:not([disabled]) {
     border-color: #bf92f9;
-    background-color: #bf92f9;
+    background-position: 0px 0px;
 }
 
 input[type="checkbox"]:disabled {
