@@ -56,7 +56,7 @@ class Word {
     }
 }
 
-fetch(root + "/language/vocabulary.json").then(response => response.json()).then(json => this.vocabulary = json.map(data => new Word(data)))
+fetch(root + "/language/vocabulary.json").then(response => response.json()).then(json => this.vocabulary = json)
 
 // #endregion
 // #region build
