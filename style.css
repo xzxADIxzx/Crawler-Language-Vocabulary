@@ -1,3 +1,5 @@
+/* #region general */
+
 body {
     margin: 0;
 
@@ -90,6 +92,7 @@ nav>i {
     box-shadow: inset 0px 0px 8px #bf92f9;
 }
 
+/* #endregion */
 /* #region about & learn */
 
 h1 {
@@ -186,18 +189,26 @@ h2 {
 }
 
 #word-list {
-    margin-right: 32px;
+    margin-right: 64px;
     row-gap: 32px;
     column-gap: 32px;
 
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 33.333% 33.333% 33.333%;
 }
 
 .word {
     border: 1px solid;
     border-color: #444c56;
     border-radius: 8px;
+}
+
+.word:hover {
+    border-color: #6d56bf;
+}
+
+.word:focus {
+    border-color: #bf92f9;
 }
 
 .word-original,
