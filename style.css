@@ -64,9 +64,9 @@ nav>i {
 }
 
 #content {
-    height: calc(100vh - 96px);
+    height: calc(100vh - 128px);
 
-    padding: 32px 256px 0px 256px;
+    padding: 32px 256px;
 
     font-family: "Noto Sans";
     font-size: 16px;
@@ -160,11 +160,23 @@ h2 {
 /* #endregion */
 /* #region vocabulary */
 
+#word-form {
+    border-color: #444c56 !important;
+}
+
+#word-form>div:nth-child(2) {
+    width: 30%;
+
+    display: grid;
+    grid-template-columns: 20px auto 20px auto 20px auto;
+    align-items: center;
+}
+
 #word-search {
     width: calc(100% - 34px);
 
     padding: 4px 16px;
-    margin-bottom: 32px;
+    margin: 32px 0px;
 
     font-family: "Noto Sans";
     font-size: 16px;
@@ -207,37 +219,16 @@ h2 {
     border-color: #6d56bf;
 }
 
-.word:focus {
-    border-color: #bf92f9;
-}
-
-.word-original,
-.word-translation {
+.word>div {
     padding: 8px;
-    background-color: #444c56;
-}
-
-.word-original {
-    width: 40%;
-    border-top-left-radius: 6px;
-}
-
-.word-translation {
-    width: 60%;
-    border-top-right-radius: 6px;
 }
 
 .word>div:nth-child(1) {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+
     display: flex;
-}
-
-.word>div:nth-child(2) {
-    width: 80%;
-    padding: 8px;
-
-    display: grid;
-    grid-template-columns: 20px auto 20px auto 20px auto;
-    align-items: center;
+    background-color: #444c56;
 }
 
 input[type="checkbox"] {

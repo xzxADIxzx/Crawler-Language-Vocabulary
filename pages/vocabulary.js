@@ -10,12 +10,11 @@ function buildVocabulary() {
 
     search.addEventListener("input", () => {
         var value = search.value.toLowerCase().trim()
-        var items = document.getElementsByClassName("word")
 
         if (value == "")
-            for (let item of items) item.style.display = "block"
+            for (let item of list.children) item.style.display = "block"
         else
-            for (let item of items) item.style.display = compare(item, 1, value) == -1 && compare(item, 3, value) == -1 ? "none" : "block"
+            for (let item of list.children) item.style.display = compare(item, 1, value) == -1 && compare(item, 3, value) == -1 ? "none" : "block"
     })
 }
 
