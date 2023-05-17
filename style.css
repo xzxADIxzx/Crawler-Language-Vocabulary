@@ -261,7 +261,11 @@ h2 {
     background-color: #444c56;
 }
 
-input[type="checkbox"] {
+/* #endregion */
+/* #region input */
+
+input[type="checkbox"],
+input[type="radio"] {
     width: 14px;
     height: 14px;
 
@@ -290,6 +294,23 @@ input[type="checkbox"]:checked:not([disabled]) {
 }
 
 input[type="checkbox"]:disabled {
+    background-color: #444c56;
+}
+
+input[type="radio"] {
+    border-radius: 7px;
+}
+
+input[type="radio"]:hover:not([disabled]) {
+    border-color: #6d56bf;
+}
+
+input[type="radio"]:checked:not([disabled]) {
+    border-color: #bf92f9;
+    background-color: #bf92f9;
+}
+
+input[type="radio"]:disabled {
     background-color: #444c56;
 }
 
