@@ -1,3 +1,5 @@
+// #region logic
+
 var selected, data
 var original, translation, verb, perfect, participle, adjective, forced
 
@@ -43,6 +45,7 @@ function select(element) {
     update()
 }
 
+// #endregion
 // #region build
 
 function buildVocabulary() {
