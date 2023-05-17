@@ -1,0 +1,102 @@
+[
+    {
+        "printed": "A",
+        "written": "a.svg",
+        "name": "Au"
+    },
+    {
+        "printed": "B",
+        "written": "b.svg",
+        "name": "Bi"
+    },
+    {
+        "printed": "C",
+        "written": "c.svg",
+        "name": "Ca"
+    },
+    {
+        "printed": "D",
+        "written": "d.svg",
+        "name": "Di"
+    },
+    {
+        "printed": "E",
+        "written": "e.svg",
+        "name": "Eu"
+    },
+    {
+        "printed": "G",
+        "written": "g.svg",
+        "name": "Gi"
+    },
+    {
+        "printed": "H",
+        "written": "h.svg",
+        "name": "Ha"
+    },
+    {
+        "printed": "I",
+        "written": "i.svg",
+        "name": "Yo"
+    },
+    {
+        "printed": "J",
+        "written": "j.svg",
+        "name": "Ji"
+    },
+    {
+        "printed": "L",
+        "written": "l.svg",
+        "name": "El"
+    },
+    {
+        "printed": "O",
+        "written": "o.svg",
+        "name": "Ou"
+    },
+    {
+        "printed": "M",
+        "written": "m.svg",
+        "name": "Em"
+    },
+    {
+        "printed": "P",
+        "written": "p.svg",
+        "name": "Pi"
+    },
+    {
+        "printed": "N",
+        "written": "n.svg",
+        "name": "En"
+    },
+    {
+        "printed": "R",
+        "written": "r.svg",
+        "name": "Er"
+    },
+    {
+        "printed": "S",
+        "written": "s.svg",
+        "name": "Si"
+    },
+    {
+        "printed": "T",
+        "written": "t.svg",
+        "name": "Ti"
+    },
+    {
+        "printed": "Y",
+        "written": "y.svg",
+        "name": "Ay"
+    },
+    {
+        "printed": "W",
+        "written": "w.svg",
+        "name": "Wi"
+    },
+    {
+        "printed": "U",
+        "written": "u.svg",
+        "name": "Yu"
+    }
+]

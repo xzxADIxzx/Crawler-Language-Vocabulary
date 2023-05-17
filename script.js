@@ -1,6 +1,7 @@
 var root = "https://raw.githubusercontent.com/xzxADIxzx/Crawler-Language-Vocabulary/main"
 var content = document.getElementById("content")
 
+fetch(root + "/language/alphabet.json").then(response => response.json()).then(json => this.alphabet = json)
 fetch(root + "/language/vocabulary.json").then(response => response.json()).then(json => this.vocabulary = json)
 
 // #region build
@@ -13,6 +14,7 @@ function load(page) {
         .then(response => response.text())
         .then(html => content.innerHTML = html)
         .finally(() => {
+            if (page == "learn") buildLearn()
             if (page == "vocabulary") buildVocabulary()
         })
 }
