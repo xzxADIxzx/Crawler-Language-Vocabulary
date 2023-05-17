@@ -124,6 +124,36 @@ h2 {
 /* #endregion */
 /* #region learn */
 
+#alphabet {
+    padding: 8px;
+    margin: 8px;
+
+    border: 1px solid;
+    border-color: #444c56;
+    border-radius: 8px;
+
+    display: flex;
+}
+
+#alphabet>div:nth-child(1) {
+    flex-grow: 1;
+
+    font-size: 28px;
+    text-align: center;
+
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    align-items: center;
+
+}
+
+#alphabet>div:nth-child(2) {
+    width: 20%;
+    padding-left: 32px;
+
+    align-self: center;
+}
+
 .notation {
     width: 512px;
     float: right;
