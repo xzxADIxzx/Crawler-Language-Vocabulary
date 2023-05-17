@@ -4,24 +4,17 @@ var list
 
 function buildLearn() {
     list = document.getElementById("alphabet").children[0]
+    buildAlphabet("<div> I </div>", "printed")
 
     var radio = document.getElementsByName("alphabet-type")
-    radio[0].onclick = buildPrinted
-    radio[1].onclick = buildHandwritten
-    radio[2].onclick = buildNames
+    radio[0].onclick = () => buildAlphabet("<div> I </div>", "printed")
+    radio[1].onclick = () => buildAlphabet("<img src=\"./language/alphabet/I\">", "written")
+    radio[2].onclick = () => buildAlphabet("<div> I </div>", "name")
 }
 
-function buildPrinted() {
+function buildAlphabet(template, key) {
     list.innerHTML = ""
-    "A B C D E G H I J L M N O P R S T U W Y".split(" ").forEach(char => list.innerHTML += "<div>" + char + "</div>")
-}
-
-function buildHandwritten() {
-    list.innerHTML = ""
-}
-
-function buildNames() {
-    list.innerHTML = ""
+    for (let char of alphabet) list.innerHTML += template.replace("I", char[key])
 }
 
 // #endregion

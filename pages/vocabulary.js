@@ -53,7 +53,7 @@ function buildVocabulary() {
     var list = document.getElementById("word-list")
 
     list.innerHTML = list.innerHTML.repeat(vocabulary.length)
-    for (let i = 0; i < vocabulary.length; i++) buildWord(list.children[i], vocabulary[i])
+    for (let i in vocabulary) buildWord(list.children[i], vocabulary[i])
 
     var search = document.getElementById("word-search")
     var compare = (item, id, value) => item.childNodes[1].childNodes[id].innerText.toLowerCase().search(value)
