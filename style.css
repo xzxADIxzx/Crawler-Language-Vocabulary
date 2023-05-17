@@ -144,7 +144,7 @@ h2 {
     display: grid;
     grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
     align-items: center;
-
+    justify-items: center;
 }
 
 #alphabet>div:nth-child(2) {
@@ -152,6 +152,10 @@ h2 {
     padding-left: 32px;
 
     align-self: center;
+}
+
+#alphabet>div>img {
+    max-width: 42px;
 }
 
 .notation {
