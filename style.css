@@ -284,7 +284,7 @@ input[type="radio"] {
     background-position: -14px -14px;
 
     appearance: none;
-    transition: .25s border-color, .25s background-color, .25s background-position;
+    transition: .15s border-width, .25s border-color, .25s background-color, .25s background-position;
 }
 
 input[type="checkbox"]:hover:not([disabled]) {
@@ -310,8 +310,8 @@ input[type="radio"]:hover:not([disabled]) {
 }
 
 input[type="radio"]:checked:not([disabled]) {
+    border-width: 7px;
     border-color: #bf92f9;
-    background-color: #bf92f9;
 }
 
 input[type="radio"]:disabled {
