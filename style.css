@@ -155,7 +155,8 @@ h2 {
 }
 
 #alphabet>div>img {
-    max-width: 42px;
+    max-width: 46px;
+    margin: -2px;
 }
 
 .notation {
