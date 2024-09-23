@@ -109,16 +109,54 @@ nav>i {
 }
 
 /* #endregion */
-/* #region about & learn */
+/* #region text group */
 
 h1 {
     margin-top: 48px;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
 }
 
 h2 {
     margin-top: 32px;
     margin-bottom: 12px;
+}
+
+details summary {
+    height: 0;
+
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+}
+
+details summary div {
+    border-top: 1px solid #444c56;
+}
+
+details summary::after {
+    width: 16px;
+    height: 16px;
+
+    background-image: url("arrow.svg");
+
+    content: "";
+    display: block;
+    transform: translate(-20px, -8px);
+    transition: .25s transform;
+}
+
+details summary::marker {
+    content: none;
+}
+
+details[open] {
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #444c56;
+}
+
+details[open] summary::after {
+    transform: translate(-20px, -8px) scaleY(-1);
 }
 
 /* #endregion */

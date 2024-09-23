@@ -12,7 +12,7 @@ navs.forEach(nav => nav.addEventListener("click", () => load(nav.href.split('#')
 function load(page) {
     fetch(root + "/pages/" + page + ".html")
         .then(response => response.text())
-        .then(html => content.innerHTML = html)
+        .then(html => content.innerHTML = html.replace("<details>", "<details open><summary><div></div></summary>"))
         .finally(() => {
             if (page == "learn") buildLearn()
             if (page == "vocabulary") buildVocabulary()
