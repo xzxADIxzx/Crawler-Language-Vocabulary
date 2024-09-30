@@ -27,7 +27,7 @@
     {
         "printed": "G",
         "written": "g.svg",
-        "name": "Gi"
+        "name": "Ga"
     },
     {
         "printed": "H",
@@ -37,7 +37,7 @@
     {
         "printed": "I",
         "written": "i.svg",
-        "name": "Yo"
+        "name": "Oi"
     },
     {
         "printed": "J",
@@ -47,7 +47,17 @@
     {
         "printed": "L",
         "written": "l.svg",
-        "name": "El"
+        "name": "Li"
+    },
+    {
+        "printed": "M",
+        "written": "m.svg",
+        "name": "Mi"
+    },
+    {
+        "printed": "N",
+        "written": "n.svg",
+        "name": "Ni"
     },
     {
         "printed": "O",
@@ -55,24 +65,14 @@
         "name": "Ou"
     },
     {
-        "printed": "M",
-        "written": "m.svg",
-        "name": "Em"
-    },
-    {
         "printed": "P",
         "written": "p.svg",
         "name": "Pi"
     },
     {
-        "printed": "N",
-        "written": "n.svg",
-        "name": "En"
-    },
-    {
         "printed": "R",
         "written": "r.svg",
-        "name": "Er"
+        "name": "Ra"
     },
     {
         "printed": "S",
@@ -85,9 +85,9 @@
         "name": "Ti"
     },
     {
-        "printed": "Y",
-        "written": "y.svg",
-        "name": "Ay"
+        "printed": "U",
+        "written": "u.svg",
+        "name": "Yu"
     },
     {
         "printed": "W",
@@ -95,8 +95,8 @@
         "name": "Wi"
     },
     {
-        "printed": "U",
-        "written": "u.svg",
-        "name": "Yu"
+        "printed": "Y",
+        "written": "y.svg",
+        "name": "Ay"
     }
 ]
