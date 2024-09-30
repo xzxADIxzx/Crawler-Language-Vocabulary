@@ -209,8 +209,7 @@ details[open] summary::after {
 }
 
 #alphabet>div>img {
-    max-width: 46px;
-    margin: -2px;
+    height: 42px;
 }
 
 .notation {
