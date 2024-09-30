@@ -1,20 +1,18 @@
 // #region build
 
-var list
-
 function buildLearn() {
-    list = document.getElementById("alphabet").children[0]
-    buildAlphabet("<div> I </div>", "printed")
+    var list = document.getElementById("alphabet").children[0]
+    var btns = document.getElementsByName("alphabet-type")
 
-    var radio = document.getElementsByName("alphabet-type")
-    radio[0].onclick = () => buildAlphabet("<div> I </div>", "printed")
-    radio[1].onclick = () => buildAlphabet("<img src=\"./language/alphabet/I\">", "written")
-    radio[2].onclick = () => buildAlphabet("<div> I </div>", "name")
+    btns[0].onclick = () => buildAlphabet(list, "<div> # </div>", "printed")
+    btns[1].onclick = () => buildAlphabet(list, "<img src=\"./language/alphabet/#\">", "written")
+    btns[2].onclick = () => buildAlphabet(list, "<div> # </div>", "name")
+    btns[0].onclick();
 }
 
-function buildAlphabet(template, key) {
+function buildAlphabet(list, template, key) {
     list.innerHTML = ""
-    for (let char of alphabet) list.innerHTML += template.replace("I", char[key])
+    for (let char of alphabet) list.innerHTML += template.replace("#", char[key])
 }
 
 // #endregion
