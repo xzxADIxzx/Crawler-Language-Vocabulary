@@ -183,8 +183,7 @@ details[open] summary::after {
     padding: 8px;
     margin: 32px;
 
-    border: 1px solid;
-    border-color: #444c56;
+    border: 1px solid #444c56;
     border-radius: 8px;
 
     display: flex;
@@ -204,6 +203,7 @@ details[open] summary::after {
 
 #alphabet>div:nth-child(2) {
     width: 25%;
+
     padding-left: 32px;
 
     align-self: center;
@@ -331,26 +331,28 @@ input[type="radio"] {
 
     margin: 0px 3px;
 
-    border: 1px solid;
-    border-color: #444c56;
-    border-radius: 4px;
-
-    background: linear-gradient(135deg, #bf92f9 50%, #0000 50%);
+    background: linear-gradient(135deg, #bf92f9 50%, transparent 50%);
     background-size: 28px 28px;
     background-position: -14px -14px;
+
+    border: 1px solid #444c56;
 
     appearance: none;
     transition: .15s border-width, .25s border-color, .25s background-color, .25s background-position;
 }
 
+input[type="checkbox"] {
+    border-radius: 4px;
+}
+
 input[type="checkbox"]:hover:not([disabled]) {
-    border-color: #6d56bf;
     background-position: -11px -11px;
+    border-color: #6d56bf;
 }
 
 input[type="checkbox"]:checked:not([disabled]) {
-    border-color: #bf92f9;
     background-position: 0px 0px;
+    border-color: #bf92f9;
 }
 
 input[type="checkbox"]:disabled {
@@ -362,6 +364,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:hover:not([disabled]) {
+    border-width: 1px;
     border-color: #6d56bf;
 }
 
