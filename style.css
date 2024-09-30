@@ -190,14 +190,13 @@ details[open] summary::after {
 }
 
 #alphabet>div:nth-child(1) {
-    flex-grow: 1;
-
     font-size: 28px;
     text-align: center;
 
+    flex-grow: 1;
+
     display: grid;
-    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-    align-items: center;
+    grid-template-columns: repeat(10, 10%);
     justify-items: center;
 }
 
@@ -329,7 +328,7 @@ input[type="radio"] {
     width: 14px;
     height: 14px;
 
-    margin: 0px 3px;
+    margin: -1px 3px;
 
     background: linear-gradient(135deg, #bf92f9 50%, transparent 50%);
     background-size: 28px 28px;
