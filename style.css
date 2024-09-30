@@ -136,6 +136,12 @@ details summary {
 
 details summary div {
     border-top: 1px solid #444c56;
+
+    transition: .25s border-color;
+}
+
+details summary:hover div {
+    border-color: #6d56bf;
 }
 
 details summary::after {
@@ -158,6 +164,12 @@ details[open] {
     padding-bottom: 16px;
 
     border-bottom: 1px solid #444c56;
+
+    transition: .25s border-color;
+}
+
+details[open]:has(summary:hover) {
+    border-color: #6d56bf;
 }
 
 details[open] summary::after {
